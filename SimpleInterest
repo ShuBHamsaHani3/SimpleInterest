@@ -1,0 +1,30 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class simpleInterest {
+    public static void main(String[] args)
+    {
+        calculationSimpleInterest objcalculationSimpleInterest = new calculationSimpleInterest();
+        objcalculationSimpleInterest.initialize();
+        objcalculationSimpleInterest.simInterest();
+    }
+}
+class calculationSimpleInterest
+{
+    int p,r,t;
+    public void initialize()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the principle amount: ");
+        p = sc.nextInt();
+        System.out.println("Enter the Rate: ");
+        r = sc.nextInt();
+        System.out.println("Enter the Time: ");
+        t = sc.nextInt();
+    }
+    public void simInterest()
+    {
+        System.out.println("Simple Interest is : " +  (p*r*t)/100);
+    }
+}
